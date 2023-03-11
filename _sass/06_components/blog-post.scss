@@ -1,0 +1,49 @@
+.blog-post {
+  margin-bottom: 6em;
+  padding: 2em;
+  header {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 1em;
+    h2 {
+      font-family: $font-family-headline;
+      font-size: calc(16px + 3vw);
+      font-weight: 600;
+      line-height: 1.2em;
+      margin: 0;
+    }
+    h3 {
+      font-family: $font-family-regular;
+      color: #5F83AD;
+      font-size: 1em;
+      line-height: 1.75em;
+      margin: 0 0 1em 0;
+    }
+    .feelings {
+      span {
+        padding: 3px 10px 4px 10px;
+        color: #797f5a;
+        line-height: 1em;
+        margin-right: 1em;
+        background: #E0E2D6;
+        display: inline-block;
+        border-radius: 22px;
+        font-size: .8em;
+      }
+    }
+  }
+
+  main {
+    p {
+      font-size: 20px;
+      line-height: 2em;
+      text-indent: 1.5em;
+      margin-bottom: 2em;
+    }
+  }
+
+  @include media(600px) {
+    main {
+      padding: 3em 0 0 20%;
+    }
+  }
+}

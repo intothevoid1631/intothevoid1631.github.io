@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="post-listing">
+  {% for post in site.posts limit: 2  %}
+    <article class="blog-post">
+      <header>
+        <h2>{{ post.title }}</h2>
+        <h3>{{ post.date | date: "%B %-d, %Y" }}</h3>
+        <div class="feelings">
+          {% for tag in post.tags %}
+            <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </header>
+      <main>
+        {{ post.content }}
+      </main>
+    </article>
+  {% endfor %}
+</div>

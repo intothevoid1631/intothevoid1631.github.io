@@ -1,0 +1,35 @@
+#site-header {
+  align-items: center;
+  background: #2F4D77;
+  color: white;
+  box-shadow: 0 0 4px 0px #ccc;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: $spacing-medium $spacing-xxx-large;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  h1 {
+    font-family: $font-family-headline;
+    letter-spacing: 0.05em;
+  }
+
+  nav {
+  }
+
+  a {
+    font-weight: normal;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: all .5s ease;
+    border-radius: 4px;
+    &:hover {
+      background: darken(#2f4d77, 10%);
+    }
+  }
+
+  @include media(600px) {
+  }
+}

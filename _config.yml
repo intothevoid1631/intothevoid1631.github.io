@@ -1,0 +1,15 @@
+permalink: /:categories/:year/:month/:day/:title
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+highlighter: rouge
+markdown: kramdown
+
+title : Chris Peak Designs
+author : "Chris Peak"
+name : "Chris"
+email : chrispeak@hey.com
+github : cpeak
+twitter : c_peak
+feedburner :
+
+production_url : http://cpeak.github.io
