@@ -4,12 +4,12 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
 markdown: kramdown
 
-title : Chris Peak Designs
-author : "Chris Peak"
-name : "Chris"
-email : chrispeak@hey.com
-github : cpeak
-twitter : c_peak
+title : Untitled
+author : "Untitled"
+name : "Into The Void"
+email : intothevoid1631@gmail.com
+github : intothevoid1631
+twitter :
 feedburner :
 
-production_url : http://cpeak.github.io
+production_url : http://intothevoid1631.github.io
