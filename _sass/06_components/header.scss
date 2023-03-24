@@ -1,18 +1,19 @@
 #site-header {
   align-items: center;
   background: #2F4D77;
-  color: white;
   box-shadow: 0 0 4px 0px #ccc;
+  color: white;
   display: flex;
   justify-content: space-between;
   left: 0;
-  padding: $spacing-medium $spacing-xxx-large;
+  padding: $spacing-small;
   position: fixed;
   top: 0;
   width: 100%;
 
   h1 {
     font-family: $font-family-headline;
+    font-style: italic;
     letter-spacing: 0.05em;
   }
 
@@ -31,5 +32,6 @@
   }
 
   @include media(600px) {
+    padding: $spacing-medium $spacing-xxx-large;
   }
 }
