@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
+<div class="post-listing">
 <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-    <h1 class="title" itemprop="name headline">{{ page.title }}</h1>
+    <h2>{{ page.title }}</h2>
+    <h3>{{ page.date | date: "%B %-d, %Y" }}</h3>
+    <div class="feelings">
+      {% for tag in page.tags %}
+        <span>{{ tag }}</span>
+      {% endfor %}
+    </div>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <main>
     {{ content }}
-  </div>
+  </main>
 
   <footer class="post-navigation">
     {% if page.previous.url %}
@@ -21,3 +27,4 @@ layout: default
   </footer>
 
 </article>
+</div>
