@@ -1,6 +1,9 @@
 .post-listing {
-  max-width: 1000px;
-  margin: 8em auto;
+  max-width: 720px;
+  margin: 4em auto;
+  @include media(800px) {
+    margin: 8em auto;
+  }
 }
 
 .post-navigation {
@@ -29,3 +32,5 @@
     }
   }
 }
+
+

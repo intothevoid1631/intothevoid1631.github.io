@@ -1,10 +1,10 @@
 .post-index {
-  max-width: 600px;
+  max-width: 720px;
   margin: 8em auto;
   display: flex;
   flex-direction: column;
   a {
-    border-bottom: 1px dashed #2F4D77;
+    border-bottom: 1px dashed #888888;
     display: block;
     padding: 2em;
     text-decoration: none;
@@ -14,10 +14,11 @@
     }
     span.title {
       font-family: $font-family-headline;
-      font-size: 2em;
+      font-size: $font-size-heading-large;
     }
     span.date {
-
+      font-size: $font-size-heading-medium;
+      color: #ff827c;
     }
     &:hover {
       background: #eee;

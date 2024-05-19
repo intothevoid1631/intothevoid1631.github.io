@@ -1,8 +1,7 @@
 #site-header {
   align-items: center;
-  background: #2F4D77;
-  box-shadow: 0 0 4px 0px #ccc;
-  color: white;
+  background: white;
+  border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   left: 0;
@@ -12,26 +11,31 @@
   width: 100%;
 
   h1 {
-    font-family: $font-family-headline;
-    font-style: italic;
-    letter-spacing: 0.05em;
+    color: #444444;
+    font-size: $font-size-text-medium;
+    font-family: "Lucida Grande","lucida-grande","Lucida Sans Unicode","Lucida Sans",Geneva,sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.05em;
   }
 
   nav {
   }
 
   a {
-    font-weight: normal;
+    color: #888888;
+    font-family: "Lucida Grande","lucida-grande","Lucida Sans Unicode","Lucida Sans",Geneva,sans-serif;
+    font-size: $font-size-text-small;
+    font-weight: 400;
     padding: 0.5em 1em;
     text-decoration: none;
     transition: all .5s ease;
     border-radius: 4px;
     &:hover {
-      background: darken(#2f4d77, 10%);
+      background: #eeeeee;
+      color: #2b2b2b;
     }
   }
 
   @include media(600px) {
-    padding: $spacing-medium $spacing-xxx-large;
   }
 }
