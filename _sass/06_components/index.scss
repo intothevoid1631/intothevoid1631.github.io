@@ -1,0 +1,54 @@
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+.stripe-container {
+  .stripe {
+    background: #222222;
+    background-size: cover;
+    h2 {
+      background: rgba(0,0,0,0.8);
+      color: white;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 2.5em;
+      margin: 0;
+      padding: 0.25em 2em;
+      transition: all 0.5s ease;
+    }
+  }
+  .stripe.odd {
+    text-align: right;
+  }
+  .stripe:hover {
+    cursor: pointer;
+    h2 {
+      background: rgba(0,0,0,0.5);
+      padding: 0.25em 4em;
+    }
+  }
+  h2.active {
+  }
+}
+
+
+.entry {
+  animation: fadeEffect 1s;
+  display: none;
+}
+
+
+#stripe97 { background: url('/images/1997.jpg'); background-size: cover; background-position: 50%; }
+#stripe98 { background: url('/images/1998.jpg'); background-size: cover; background-position: 90%; }
+#stripe99 { background: url('/images/1999.jpg'); background-size: cover; background-position: 90%; }
+#stripe00 { background: url('/images/2000.jpg'); background-size: cover; background-position: 10%; }
+#stripe01 { background: url('/images/2001.jpg'); background-size: cover; background-position: 10%; }
+#stripe02 { background: url('/images/2002.jpg'); background-size: cover; background-position: 10%; }
+#stripe03 { background: url('/images/2003.jpg'); background-size: cover; background-position: 80%; }
+#stripe04 { background: url('/images/2004.jpg'); background-size: cover; background-position: 50%; }
+#stripe05 { background: url('/images/2005.jpg'); background-size: cover; background-position: 50%; }
+#stripe06 { background: url('/images/2006.jpg'); background-size: cover; background-position: 50%; }

@@ -1,29 +1,26 @@
 #site-header {
   align-items: center;
-  background: white;
-  border-bottom: 1px solid #ccc;
+  background: black;
+  color: white;
+  border-bottom: 2px solid #D8B33E;
   display: flex;
   justify-content: space-between;
-  left: 0;
-  padding: $spacing-small;
-  position: fixed;
-  top: 0;
+  padding: $spacing-medium;
   width: 100%;
 
   h1 {
-    color: #444444;
+    color: white;
     font-size: $font-size-text-medium;
-    font-family: "Lucida Grande","lucida-grande","Lucida Sans Unicode","Lucida Sans",Geneva,sans-serif;
-    font-weight: 400;
-    letter-spacing: -0.05em;
+    font-weight: 600;
   }
 
-  nav {
+  svg {
+    fill: white;
+    width: 6em;
   }
 
   a {
-    color: #888888;
-    font-family: "Lucida Grande","lucida-grande","Lucida Sans Unicode","Lucida Sans",Geneva,sans-serif;
+    color: white;
     font-size: $font-size-text-small;
     font-weight: 400;
     padding: 0.5em 1em;

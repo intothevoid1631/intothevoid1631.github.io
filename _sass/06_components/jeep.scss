@@ -1,0 +1,108 @@
+$cell-border-color: #ccc;
+
+.jeep-container {
+  max-width: 1200px;
+  margin: 3em auto;
+}
+// -------------------------------- TABLE
+.jeep-container table {
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 2em;
+  text-align: center;
+  width: 100%;
+  tr {
+  }
+  th {
+    background: #f5f5f5;
+    border: 1px solid $cell-border-color;
+    padding: 4px 8px;
+  }
+  td {
+    padding: 4px 8px;
+    border: 1px solid $cell-border-color;
+  }
+  th:first-of-type {
+    text-align: left;
+  }
+  td:first-of-type {
+    padding: 0 3em 0 1em;
+    text-align: left;
+  }
+}
+
+
+
+
+// -------------------------------- PAINT
+.paint-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding-bottom: 1em;
+  span {
+    display: inline-block;
+    background: pink;
+    border: 1px solid #ccc;
+    line-height: 1em;
+    color: white;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    align-content: center;
+  }
+
+  .new {
+    position: relative;
+    border: 1px solid #ff4444;
+    &:after {
+      width: 0;
+      height: 0;
+      border-top: 16px solid #ff4444;
+      border-left: 16px solid transparent;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .dark-text { color: black; }
+
+  .amber-fire { background: #C2673C; }
+  .black { background: #000000; }
+  .bright-jade { background: #479FB5; }
+  .bright-silver { background: #98A9BA; }
+  .chili-pepper-red { background: #862C27; }
+  .citron { background: #958F45; }
+  .dark-montego-blue{ background: #2F406A; }
+  .deep-amethyst { background: #212545; }
+  .deep-beryl-green { background: #506B70; }
+  .deep-cranberry { background: #2A0E14; }
+  .deep-slate { background: #2C3444; }
+  .desert-sand { background: #B59470; }
+  .electric-lime-green { background: #58C15D; }
+  .emerald-green { background: #446C78; }
+  .flame-red { background: #D9442C; }
+  .forest-green { background: #2B4949; }
+  .gunmetal { background: #4A5866; }
+  .impact-orange { background: #C95B33; }
+  .inca-gold { background: #D6AB4B; }
+  .inferno-red { background: #D52D1F; }
+  .intense-blue{ background: #418AF3; }
+  .lapis-blue{ background: #4C6ABC; }
+  .light-almond { background: #9F9580; }
+  .light-khaki { background: #948E87; }
+  .magenta { background: #7F346A; }
+  .medium-fern-green { background: #869D9F; }
+  .midnight-blue { background: #192B60; }
+  .moss-green { background: #304137; }
+  .patriot-blue { background: #12345D; }
+  .shale-green { background: #4E6C71; }
+  .sienna-pearl { background: #835365; }
+  .silverstone { background: #B5BBC2; }
+  .solar-yellow { background: #F5D348; color: black; }
+  .steel-blue { background: #6386A2; }
+  .stone-white { background: #FFFFFF; }
+  .taupe-frost { background: #999288; }
+}

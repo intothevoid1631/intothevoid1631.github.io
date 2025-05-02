@@ -1,22 +1,103 @@
 ---
 layout: default
 ---
+<section class="stripe-container">
+  <section class="stripe odd" id="stripe97">
+    <h2 class="year" onclick="openContent(event, 'entry97')">1997</h2>
+  </section>
+  <section class="entry" id="entry97">
+    {% include jeep-data/1997.html %}
+  </section>
 
-<div class="post-listing">
-  {% for post in site.posts limit: 2  %}
-    <article class="blog-post">
-      <header>
-        <h2>{{ post.title }}</h2>
-        <h3 class="blog-post-date">{{ post.date | date: "%B %-d, %Y" }}</h3>
-        <div class="feelings">
-          {% for tag in post.tags %}
-            <span>{{ tag }}</span>
-          {% endfor %}
-        </div>
-      </header>
-      <main>
-        {{ post.content }}
-      </main>
-    </article>
-  {% endfor %}
-</div>
+  <section class="stripe" id="stripe98">
+    <h2 class="year" onclick="openContent(event, 'entry98')">1998</h2>
+  </section>
+  <section class="entry" id="entry98">
+    {% include jeep-data/1998.html %}
+  </section>
+
+  <section class="stripe odd" id="stripe99">
+    <h2 class="year" onclick="openContent(event, 'entry99')">1999</h2>
+  </section>
+  <section class="entry" id="entry99">
+    {% include jeep-data/1999.html %}
+  </section>
+
+  <section class="stripe" id="stripe00">
+    <h2 class="year" onclick="openContent(event, 'entry00')">2000</h2>
+  </section>
+  <section class="entry" id="entry00">
+    {% include jeep-data/2000.html %}
+  </section>
+
+  <section class="stripe odd" id="stripe01">
+    <h2 class="year" onclick="openContent(event, 'entry01')">2001</h2>
+  </section>
+  <section class="entry" id="entry01">
+    {% include jeep-data/2001.html %}
+  </section>
+
+  <section class="stripe" id="stripe02">
+    <h2 class="year" onclick="openContent(event, 'entry02')">2002</h2>
+  </section>
+  <section class="entry" id="entry02">
+    {% include jeep-data/2002.html %}
+  </section>
+
+  <section class="stripe odd" id="stripe03">
+    <h2 class="year" onclick="openContent(event, 'entry03')">2003</h2>
+  </section>
+  <section class="entry" id="entry03">
+    {% include jeep-data/2003.html %}
+  </section>
+
+  <section class="stripe" id="stripe04">
+    <h2 class="year" onclick="openContent(event, 'entry04')">2004</h2>
+  </section>
+  <section class="entry" id="entry04">
+    {% include jeep-data/2004.html %}
+  </section>
+
+  <section class="stripe odd" id="stripe05">
+    <h2 class="year" onclick="openContent(event, 'entry05')">2005</h2>
+  </section>
+  <section class="entry" id="entry05">
+    {% include jeep-data/2005.html %}
+  </section>
+
+  <section class="stripe" id="stripe06">
+    <h2 class="year" onclick="openContent(event, 'entry06')">2006</h2>
+  </section>
+  <section class="entry" id="entry06">
+    {% include jeep-data/2006.html %}
+  </section>
+</section>
+
+
+
+
+<script>
+
+  function openContent(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("entry");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("year");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+
+}
+</script>
