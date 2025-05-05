@@ -3,7 +3,25 @@ $cell-border-color: #ccc;
 .jeep-container {
   max-width: 1200px;
   margin: 3em auto;
+  padding: 0 2em 2em 2em;
 }
+
+.close-button {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: $font-size-text-small;
+  opacity: 0.5;
+  padding: 0.5em 1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  transition: all .5s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
+
 // -------------------------------- TABLE
 .jeep-container table {
   border-collapse: collapse;
@@ -32,34 +50,61 @@ $cell-border-color: #ccc;
 }
 
 
+// -------------------------------- BROCHURES
+.documentation {
+  margin-bottom: 1.5em;
+}
+
+.brochures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.brochure {
+  text-align: center;
+  span {
+    background-size: cover;
+    padding-top: 100%;
+    display: block;
+    width: 100%;
+  }
+}
+
+
+.brochure-02 { background-image: url('/images/2002-brochure-preview.png'); }
 
 
 // -------------------------------- PAINT
 .paint-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  padding-bottom: 1em;
-  span {
-    display: inline-block;
-    background: pink;
-    border: 1px solid #ccc;
-    line-height: 1em;
-    color: white;
-    width: 3em;
-    height: 3em;
-    text-align: center;
-    align-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2em;
+  padding-bottom: 2em;
+  section {
+    span {
+      border: 1px solid #ccc;
+      display: inline-block;
+      background: pink;
+      margin: 0 auto;
+      display: block;
+      height: 5em;
+      width: 100%;
+    }
+    p {
+      font-size: $font-size-text-small;
+      font-weight: 600;
+      margin: 0;
+    }
+
   }
 
   .new {
     position: relative;
-    border: 1px solid #ff4444;
     &:after {
       width: 0;
       height: 0;
-      border-top: 16px solid #ff4444;
-      border-left: 16px solid transparent;
+      border-top: 30px solid #ff4444;
+      border-left: 30px solid transparent;
       content: "";
       position: absolute;
       top: 0;
@@ -67,9 +112,15 @@ $cell-border-color: #ccc;
     }
   }
 
+  .years {
+    color: #999999;
+    font-size: $font-size-text-small;
+    line-height: 1em;
+  }
+
   .dark-text { color: black; }
 
-  .amber-fire { background: #C2673C; }
+  .amber-fire { background: #CE8768; }
   .black { background: #000000; }
   .bright-jade { background: #479FB5; }
   .bright-silver { background: #98A9BA; }
@@ -98,7 +149,7 @@ $cell-border-color: #ccc;
   .midnight-blue { background: #192B60; }
   .moss-green { background: #304137; }
   .patriot-blue { background: #12345D; }
-  .shale-green { background: #4E6C71; }
+  .shale-green { background: #507071; }
   .sienna-pearl { background: #835365; }
   .silverstone { background: #B5BBC2; }
   .solar-yellow { background: #F5D348; color: black; }

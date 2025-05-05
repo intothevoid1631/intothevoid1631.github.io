@@ -13,12 +13,12 @@
     h2 {
       background: rgba(0,0,0,0.8);
       color: white;
-      font-size: 60px;
+      font-size: 75px;
       font-weight: 700;
-      line-height: 2.5em;
+      line-height: 2em;
       margin: 0;
-      padding: 0.25em 2em;
-      transition: all 0.5s ease;
+      padding: 0.25em 10%;
+      transition: all 0.75s ease;
     }
   }
   .stripe.odd {
@@ -28,7 +28,7 @@
     cursor: pointer;
     h2 {
       background: rgba(0,0,0,0.5);
-      padding: 0.25em 4em;
+      padding: 0.25em 15%;
     }
   }
   h2.active {
@@ -39,6 +39,8 @@
 .entry {
   animation: fadeEffect 1s;
   display: none;
+  position: relative;
+  border: 1px solid white;
 }
 
 
