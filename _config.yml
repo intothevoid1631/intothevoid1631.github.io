@@ -4,9 +4,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
 markdown: kramdown
 
-title : Untitled
+title : Wrangler TJ
 author : "Untitled"
-name : "Into The Void"
+name : "Wrangler TJ"
 email : intothevoid1631@gmail.com
 github : intothevoid1631
 twitter :

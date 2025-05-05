@@ -37,14 +37,15 @@ $cell-border-color: #ccc;
     padding: 4px 8px;
   }
   td {
-    padding: 4px 8px;
     border: 1px solid $cell-border-color;
+    line-height: 1em;
+    padding: 8px 8px;
   }
   th:first-of-type {
     text-align: left;
   }
   td:first-of-type {
-    padding: 0 3em 0 1em;
+    padding-left: 1em;
     text-align: left;
   }
 }
@@ -64,96 +65,22 @@ $cell-border-color: #ccc;
   text-align: center;
   span {
     background-size: cover;
-    padding-top: 100%;
     display: block;
+    padding-top: 100%;
+    background-position: 50%;
     width: 100%;
   }
 }
 
 
+.brochure-full-97 { background-image: url('/images/1997-all-models-preview.png'); }
+.brochure-full-98 { background-image: url('/images/1998-all-models-preview.png'); }
+.brochure-full-99 { background-image: url('/images/1999-all-models-preview.png'); }
+.brochure-full-00 { background-image: url('/images/2000-all-models-preview.png'); }
+.brochure-full-01 { background-image: url('/images/2001-all-models-preview.png'); }
 .brochure-02 { background-image: url('/images/2002-brochure-preview.png'); }
+.brochure-03 { background-image: url('/images/2003-brochure-preview.png'); }
+.brochure-04 { background-image: url('/images/2004-brochure-preview.png'); }
+.brochure-05 { background-image: url('/images/2005-brochure-preview.png'); }
+.brochure-06 { background-image: url('/images/2006-brochure-preview.png'); }
 
-
-// -------------------------------- PAINT
-.paint-chips {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 2em;
-  padding-bottom: 2em;
-  section {
-    span {
-      border: 1px solid #ccc;
-      display: inline-block;
-      background: pink;
-      margin: 0 auto;
-      display: block;
-      height: 5em;
-      width: 100%;
-    }
-    p {
-      font-size: $font-size-text-small;
-      font-weight: 600;
-      margin: 0;
-    }
-
-  }
-
-  .new {
-    position: relative;
-    &:after {
-      width: 0;
-      height: 0;
-      border-top: 30px solid #ff4444;
-      border-left: 30px solid transparent;
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-  }
-
-  .years {
-    color: #999999;
-    font-size: $font-size-text-small;
-    line-height: 1em;
-  }
-
-  .dark-text { color: black; }
-
-  .amber-fire { background: #CE8768; }
-  .black { background: #000000; }
-  .bright-jade { background: #479FB5; }
-  .bright-silver { background: #98A9BA; }
-  .chili-pepper-red { background: #862C27; }
-  .citron { background: #958F45; }
-  .dark-montego-blue{ background: #2F406A; }
-  .deep-amethyst { background: #212545; }
-  .deep-beryl-green { background: #506B70; }
-  .deep-cranberry { background: #2A0E14; }
-  .deep-slate { background: #2C3444; }
-  .desert-sand { background: #B59470; }
-  .electric-lime-green { background: #58C15D; }
-  .emerald-green { background: #446C78; }
-  .flame-red { background: #D9442C; }
-  .forest-green { background: #2B4949; }
-  .gunmetal { background: #4A5866; }
-  .impact-orange { background: #C95B33; }
-  .inca-gold { background: #D6AB4B; }
-  .inferno-red { background: #D52D1F; }
-  .intense-blue{ background: #418AF3; }
-  .lapis-blue{ background: #4C6ABC; }
-  .light-almond { background: #9F9580; }
-  .light-khaki { background: #948E87; }
-  .magenta { background: #7F346A; }
-  .medium-fern-green { background: #869D9F; }
-  .midnight-blue { background: #192B60; }
-  .moss-green { background: #304137; }
-  .patriot-blue { background: #12345D; }
-  .shale-green { background: #507071; }
-  .sienna-pearl { background: #835365; }
-  .silverstone { background: #B5BBC2; }
-  .solar-yellow { background: #F5D348; color: black; }
-  .steel-blue { background: #6386A2; }
-  .stone-white { background: #FFFFFF; }
-  .taupe-frost { background: #999288; }
-}
